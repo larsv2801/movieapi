@@ -49,6 +49,37 @@ app.get('/006', (req, res) => {
     });
 });
 
+app.get('/007', (req, res) => {
+    res.status(200).send({
+        titel: 'inside out',
+        service: 'disney',
+        poster: 'https://m.media-amazon.com/images/M/MV5BOTgxMDQwMDk0OF5BMl5BanBnXkFtZTgwNjU5OTg2NDE@._V1_.jpg'
+    });
+});
+
+app.get('/008', (req, res) => {
+    res.status(200).send({
+        titel: 'free guy',
+        service: 'disney',
+        poster: 'https://image.tmdb.org/t/p/original/xmbU4JTUm8rsdtn7Y3Fcm30GpeT.jpg'
+    });
+});
+
+app.get('/009', (req, res) => {
+    res.status(200).send({
+        titel: 'x-men',
+        service: 'disney',
+        poster: 'https://m.media-amazon.com/images/M/MV5BZmIyMDk5NGYtYjQ5NS00ZWQxLTg2YzQtZDk1ZmM4ZDBlN2E3XkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_.jpg'
+    });
+});
+app.get('/010', (req, res) => {
+    res.status(200).send({
+        titel: 'the greatest showman',
+        service: 'disney',
+        poster: 'https://m.media-amazon.com/images/I/91K5rwup9QL.jpg'
+    });
+});
+
 app.listen(
     PORT,
     () => console.log(`its alive on http://localhost:${PORT}`)
